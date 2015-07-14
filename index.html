@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Nexus-Studio</title>
+	<meta name="author" content="nexus-studio" />
+	<meta name="description" content="Разработка сайтов, 3D графика, 3D визуализация, 3D моделирование, обучение 3d графике." />
+	<meta name="keywords"  content="3d графика, Визуализация, студия, nrxus-studio" />
+	<meta name="Resource-type" content="Document" />
+   <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/skeleton.css">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/slider.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/main.js"></script>
+     	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4th'],
+				navigation: false,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third', 'Fourth']
+			});
+		});
+	</script>
+<script>
+$("#location-bar a").click(function(event){
+  event.preventDefault();
+  
+  var $this = $(this),
+      $li = $this.parent(),
+      selectedMap = $this.attr("href"),
+      selectedLocation = $this.data('location');
+ 
+  $li.addClass('active').siblings('li').removeClass('active');
+
+  //Update #map bkimage with the image from the location
+  $('#map').css('background-image', 'url(' + selectedMap + ')');  
+  //update tooltip 'address'
+  $('.selectedLocation').text(selectedLocation);
+});    
+</script>
+</head>
+<body>
+<input type="checkbox" id="nav-control" class="nav-control" >
+<label for="nav-control" class="toggle-button">
+  <div class="wolverine">
+    <div class="claws"></div> <span>menu</span>
+  </div>
+</label>
+<nav class="navigation">
+ <div class="space-menu"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+  <h1><a href="#firstPage">Главная</a></h1>
+  <h1><a href="#secondPage">Наши работы</a></h1>
+  <h1><a href="#3rdPage">Отзывы</a></h1>
+  <h1><a href="#4th">Контакты</a></h1>
+    <h1><a href="http://blog.nexus-studio.ru/">Наш Блог</a></h1>
+  <h1><a href="http://edu.nexus-studio.ru/">Школа 3D Графики</a></h1>
+
+</nav>
+<div id="fullpage">
+
+	<div class="section" id="section0">
+		<div class="intro">
+ <div class="arrow-down"></div>
+		</div>
+	</div>
+		<div class="section" id="section1">
+
+	    <div class="slide" id="slide2">
+	    <figure class="cd-image-container">
+	    <div class="card"><h1>Выполненный проект "Терраса в Москве"</h1></div>
+<img src="img/AO.png" alt="Original Image">
+		<div class="cd-resize-img"> <!-- the resizable image on top -->
+<img src="img/Final_003.png" alt="Modified Image">
+		</div>
+		<span class="cd-handle"></span>
+	</figure> 
+		</div>
+		 <div class="slide" id="slide3">
+        <div class="card2"><h1>Быстрая визуализация архитектурного CAD проекта. Визуализация выполнена в Blender Cycles. Спроектировано Марией Кочебаш. Фотореалистичность не требовалась.</h1></div>
+        </div>
+	</div>
+
+		<div class="section" id="section2">
+		    <div class="reviews">
+		        <h1>Отзывы</h1>
+		    </div>
+<div class="cd-testimonials-wrapper cd-container">
+	<ul class="cd-testimonials">
+		<li>
+			<p>Спасибо Nexus-studio за отличную визуализацию. Работа выполнена с безграничным вниманием к пожеланиям клиента, вниманием к деталям и в очень сжатые сроки. Уверенна что команда способна выгодно представить любой проект.</p>
+			<div class="cd-author">
+				<ul class="cd-author-info">
+					<li>"Мария Кочебаш"</li>
+				</ul>
+			</div>
+		</li>
+
+<!--
+		<li>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ea, perferendis error repudiandae numquam dolor fuga temporibus. Unde omnis, consequuntur.</p>
+			<div class="cd-author">
+				<ul class="cd-author-info">
+					<li>MyName</li>
+					<li>Designer, CodyHouse</li>
+				</ul>
+			</div>
+		</li>
+-->
+
+		
+	</ul> 
+
+</div>
+
+		</div>
+	
+	<div class="section" id="section3">
+<div id='browser'>
+  <div id='content'>
+    <div id='left'>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1265.6742710606395!2d36.57192608620295!3d50.62064171297346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41266b2084c72a07%3A0xea8fc26c7f8d2bd9!2z0KHRgtGD0LTQtdC90YfQtdGB0LrQsNGPINGD0LsuLCAyOCwg0JHQtdC70LPQvtGA0L7QtCwg0JHQtdC70LPQvtGA0L7QtNGB0LrQsNGPINC-0LHQuy4sIDMwODAyMw!5e0!3m2!1sru!2sru!4v1436105313370" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div id='right'>
+     <h1 class="socbot">Мы в соц.сетях:</h1>
+      <div id='social'>
+       
+        <a class='social'>
+          <a  class='entypo-facebook' href="https://www.facebook.com/nexus.studio.bel?fref"></a>
+        </a>
+      
+        <a class='social'>
+         <a class='entypo-gplus' href="https://plus.google.com/s/nexus-studio"></a>
+        </a>
+        <a class='social'>
+         <a class='entypo-vkontakte' href="http://vk.com/nexusstudioru"></a>
+        </a>
+      </div>
+      <form>
+        <p>Обратная связь</p>
+        <input placeholder='Email' type='email'>
+        <input placeholder='Имя' type='text'>
+        <textarea placeholder='Сообщение' rows='4' type="coment"></textarea>
+        <input placeholder='Отправить' type='submit'>
+      </form>
+      
+      <p class='other entypo-mail'>
+        <a href='#'>nexus-studio@yandex.ru</a>
+      </p>
+      <p class='other entypo-phone'>+7 920 584 99 54 - Степан</p>
+      <p class='other entypo-phone'>+7 920 566 74 02 - Никита</p>
+      <br/>
+      <p class="share">Расскажите о нас:</p>
+      <script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="transparent" data-options="big,square,line,horizontal,nocounter,theme=04" data-services="vkontakte,facebook,linkedin,twitter,google,email,tumblr,blogger,print"></div>
+    </div>
+  </div>
+</div>
+	</div>
+</div>
+
+
+</body>
+</html>
