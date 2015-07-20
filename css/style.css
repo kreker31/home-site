@@ -75,7 +75,8 @@ background-position: 50% 50%;
 }
 #section3 {
 font-family: 'Roboto', sans-serif;
-background: #C8C8C6;
+background-image: url(../img/56.jpg);
+background-color: transparent;
 background-repeat: no-repeat;
 background-position: 50% 50%;
 }
@@ -333,11 +334,13 @@ font-family: "Roboto", sans-serif;
   padding-right: 10px;
 }
 
+/*
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 100%;
   background: #829292;
 }
+*/
 
 *, *:before, *:after {
   margin: 0;
@@ -365,11 +368,11 @@ a {
   right: 3px;
   top: 6px;
   font-size: 1.2em;
-  color: #8e9699;
+  color: transparent;
 }
 
 #content {
-  background: #C8C8C6;
+  background: transparent;
 }
 #content:after {
   content: "";
@@ -382,7 +385,7 @@ a {
 #content #left {
   float: left;
   width: 60%;
-  background: #C8C8C6;
+  background: transparent;
 }
 @media only screen and (min-width: 320px) and (max-width: 640px) {
   #content #left {
@@ -394,7 +397,7 @@ a {
 #content #right {
   float: left;
   width: 40%;
-  background: #C8C8C6;
+  background: transparent;
   font-size: 1.3em;
   padding: 15px;
 }
@@ -403,56 +406,73 @@ a {
     width: 100%;
   }
 }
+#content #left p {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
 #content #right p {
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-#content #right a {
-  color: #2371d2;
+#content #left a {
+  color: rgba(82, 82, 82, 0.68);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
-#content #right a:hover {
-  color: #ff5722;
+#content #left a:hover {
+  color: rgba(255, 87, 34, 0.76);
 }
-#content #right #social {
-  display: table;
-  width: 100%;
+#content #left #social {
+  display: block;
+  width: 80%;
+  font-size: 36px;
+  
 }
-#content #right .social {
-  display: table-cell;
+#content #left .social {
   text-align: center;
+  border-bottom: 1px;
+  border-color: #ccc;
+  margin-left: 20%;
+}
+#content #left #social a{
+margin-right: 30px;
 }
 #content #right form {
-  border-top: solid thin #C8C8C6;
-  border-bottom: solid thin #C8C8C6;
   margin: 20px 0;
   padding: 20px 0;
 }
 #content #right form input,
 #content #right form textarea {
-  border-radius: 0px;
-  background: #ebebeb;
+  background: rgba(82, 82, 82, 0.34);
+  color: #000000;
   padding: 8px;
   margin-bottom: 8px;
   width: 100%;
-  color: white;
 }
 #content #right form input:last-of-type,
 #content #right form textarea:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 #content #right form input[type='submit'],
 #content #right form textarea[type='submit'] {
   text-transform: uppercase;
-  background: #ebebeb;
-  border-radius: 0px;
+  background: rgba(82, 82, 82, 0.34);
   width: 50%;
-  color: #a2a2a2;
+  color: #fff;
   margin-top: 5px;
 height:55px;
+        -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 #content #right form input[type='submit']:hover,
 #content #right form textarea[type='submit']:hover {
- background: #fff;
+ background: rgba(35, 113, 210, 0.58);
  color:#ffffff;
 
 }
@@ -461,15 +481,16 @@ height:55px;
   min-height: 75px;
   vertical-align: text-top;
 }
-#content #right p.other {
-  font-size: 0.7em;
-  margin-bottom: 5px;
+#content #left p.other {
+  font-size: 1.3em;
+  margin-bottom: 15px;
   text-transform: none;
   font-weight: 100;
+  margin-top: 20px;
 }
-#content #right p.other,
-#content #right p.other a {
-  color: #8e9699;
+#content #left p.other,
+#content #left p.other a {
+  color: #5a5a5a;
 }
 .intro .arrow-down {
     position: absolute;
@@ -568,7 +589,7 @@ display: none;
     #social {
     margin-bottom: 80px; 
     }
-    #right .other {
+    #left .other {
     margin-top: 40px;
     }
     .share{
@@ -607,10 +628,11 @@ display: none;
     }
 
 .socbot {
-    color: #f0f0f0;
+    color: #535353;
     padding:15px;
+    font-size: 20px;
 }
-@media only screen and (min-width: 480px) and (max-width: 640px) {
+@media only screen and (min-width: 480px) and (max-width: 960px) {
     .mcard{
     display: none;
     }
@@ -636,7 +658,7 @@ display: none;
     #social {
     margin-bottom: 80px; 
     }
-    #right .other {
+    #left .other {
     margin-top: 30px;
     }
     .share{
@@ -651,13 +673,15 @@ display: none;
     .other{
     margin-top: 20px;
     }
+/*
     form {
     display: none;
     }
+*/
     .socbot {
     padding: 5px;
     }
-    #content #right p.other {
+    #content #left p.other {
     margin-bottom: -15px;
     }
      .cd-image-container, .card, .card2, .cd-handle {
@@ -670,4 +694,9 @@ display: none;
     background-color: darkgrey;
     background-position: 50% 50%;
     }
+}
+.tellink {
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
 }
