@@ -8,9 +8,9 @@ Main components
   position: relative;
   width: 90%;
   max-width: 768px;
-  background-color: rgba(131, 131, 131, 0.67);
+  background-color: rgba(26, 26, 26, 0.46);
   margin: 2em auto;
-  padding: 20px 40px 70px;
+  padding: 40px 40px 40px;
   z-index: 1;
 }
 .cd-testimonials-wrapper::after {
@@ -23,9 +23,9 @@ Main components
   height: 50px;
   padding-top: 8px;
   margin-left: -25px;
-  background: rgba(65, 65, 65, 0.67);
+  background: rgba(35, 113, 210, 0.70);
   font-family: "Roboto", serif;
-  color: #ffffff;
+  color:rgba(255, 87, 34, 1);
   font-size: 70px;
   font-size: 4.375rem;
   text-align: center;
@@ -35,7 +35,7 @@ Main components
 @media only screen and (min-width: 768px) {
   .cd-testimonials-wrapper {
     margin: 4em auto;
-    padding: 64px 50px 114px;
+    padding: 85px 50px 85px;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -64,6 +64,8 @@ Main components
 }
 .cd-testimonials p {
   font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: italic;
   line-height: 1.4;
   margin-bottom: 1em;
   padding: 0 14px;
@@ -83,6 +85,7 @@ Main components
 }
 
 .cd-author img, .cd-author .cd-author-info {
+  font-size: 20px;
   display: inline-block;
   vertical-align: middle;
 
@@ -123,8 +126,9 @@ Main components
     font-size: 1rem;
   }
   .cd-author .cd-author-info li:last-child {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
   }
 }
 

@@ -92,10 +92,10 @@
   width: 44px;
   /* center the element */
   left: 50%;
-  top: 45%;
+  top:  -50%;
   margin-left: -22px;
-  margin-top: -22px;
-  border-radius: 50%;
+  margin-top: 50%;
+  border-radius: 50%; 
   background: #ff5722 url("../img/cd-arrows.svg") no-repeat center center;
   cursor: move;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -103,7 +103,7 @@
   -webkit-transform: translate3d(0, 0, 0) scale(0);
   -moz-transform: translate3d(0, 0, 0) scale(0);
   -ms-transform: translate3d(0, 0, 0) scale(0);
-  -o-transform: translate3d(0, 0, 0) scale(0);
+  -o-transform: translate3d(0, 0, 0) scale(0); 
   transform: translate3d(0, 0, 0) scale(0);
  animation: pulse2 1s infinite;
 }
